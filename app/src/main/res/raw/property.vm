@@ -1,0 +1,14 @@
+
+    /**
+     * $comment
+     */
+    public Future<$typeGet> get${name.substring(0,1).toUpperCase()}${name.substring(1)}() {
+        return _module.getProperty(${typeGet}.class, "$name");
+    }
+
+    /**
+     * $comment
+     */
+    public Future<java.lang.Void> set${name.substring(0,1).toUpperCase()}${name.substring(1)}($typeSet value) {
+        return _module.setProperty("$name", value);
+    }

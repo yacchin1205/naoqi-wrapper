@@ -1,0 +1,11 @@
+
+    /**
+     * $comment
+     */
+    public Future<$typeRet> $name($paramDecls) {
+#if($paramNames == "")
+        return _module.call(${typeRet}.class, "$name");
+#else
+        return _module.call(${typeRet}.class, "$name", $paramNames);
+#end
+    }

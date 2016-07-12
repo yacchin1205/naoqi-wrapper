@@ -1,0 +1,13 @@
+package net.yzwlab.naoqifacade.test;
+
+import com.aldebaran.qi.AnyObject;
+import com.aldebaran.qi.Future;
+
+public class $name {
+
+    private AnyObject _module;
+
+    public ALMemory(AnyObject module) {
+        this._module = module;
+    }
+
