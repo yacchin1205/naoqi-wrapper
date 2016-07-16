@@ -1,0 +1,8 @@
+
+    /**
+     * Signal: $name
+     * Arguments: $paramTypes
+     */
+    public QiSignalConnection $name(QiSignalListener listener) {
+        return _module.connect("$name", listener);
+    }

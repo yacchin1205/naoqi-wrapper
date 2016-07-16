@@ -1,13 +1,15 @@
-package net.yzwlab.naoqifacade.test;
+package change.to.your.package_name;
 
 import com.aldebaran.qi.AnyObject;
 import com.aldebaran.qi.Future;
+import com.aldebaran.qi.QiSignalListener;
+import com.aldebaran.qi.QiSignalConnection;
 
 public class $name {
 
     private AnyObject _module;
 
-    public ALMemory(AnyObject module) {
+    public $name(AnyObject module) {
         this._module = module;
     }
 

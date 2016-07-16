@@ -46,6 +46,8 @@ public class TemplateLoader extends FileResourceLoader {
             return R.raw.method;
         } else if (templateName.equals("property")) {
             return R.raw.property;
+        } else if (templateName.equals("signal")) {
+            return R.raw.signal;
         } else if (templateName.equals("header")) {
             return R.raw.header;
         } else if (templateName.equals("footer")) {
