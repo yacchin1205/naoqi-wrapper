@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
         }).then(new QiFunction<List<MemberDef>, AnyObject>() {
             @Override
             public Future<List<MemberDef>> onResult(AnyObject alMemory) throws Exception {
+                Log.i(TAG, "Module Description: " + alMemory);
                 return ModuleUtils.loadMembers(alMemory);
             }
 
