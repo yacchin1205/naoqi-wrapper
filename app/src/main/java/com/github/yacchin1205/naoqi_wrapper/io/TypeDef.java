@@ -52,16 +52,16 @@ public class TypeDef {
         } else if (name.equals("Object")) {
             return AnyObject.class.getName();
         } else if (name.startsWith("List<") && name.endsWith(">")) {
-            if(forParameter) {
+            if (forParameter) {
                 return List.class.getName() + "<" + (new TypeDef(name.substring(5, name.length() - 1)).asJavaClass(forParameter)) + ">";
-            }else{
+            } else {
                 return List.class.getName();
             }
         } else if (name.startsWith("Map<") && name.endsWith(">")) {
-            if(forParameter) {
+            if (forParameter) {
                 String[] types = name.substring(4, name.length() - 1).split(" ");
                 return Map.class.getName() + "<" + (new TypeDef(types[0].trim()).asJavaClass(forParameter)) + "," + (new TypeDef(types[1].trim()).asJavaClass(forParameter)) + ">";
-            }else{
+            } else {
                 return Map.class.getName();
             }
         } else if (name.equals("Unknown")) {
