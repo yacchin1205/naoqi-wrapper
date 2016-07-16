@@ -25,6 +25,12 @@ public class TypeDef {
             } else {
                 return Integer.class.getName();
             }
+        } else if (name.equals("UInt64")) {
+            if (forParameter) {
+                return Long.TYPE.getName();
+            } else {
+                return Long.class.getName();
+            }
         } else if (name.equals("Float")) {
             if (forParameter) {
                 return Float.TYPE.getName();
